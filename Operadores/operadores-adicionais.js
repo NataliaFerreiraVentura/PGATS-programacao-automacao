@@ -1,7 +1,7 @@
 /*
 
 -- decremento - Reduz 1 unidade do valor da variável.
-++ incremento - Adiciona 1 unidade ao valor da variável.
+++ gitincremento - Adiciona 1 unidade ao valor da variável.
 
 ? ternario (condicionais)
 
