@@ -1,73 +1,88 @@
-✅ Fundamentos
+# ✅ Fundamentos de JavaScript
 
-Declaração de variáveis
+## 🟦 Declaração de Variáveis
 
-let e var: variáveis mutáveis.
+- `let` e `var`: variáveis **mutáveis**
+- `const`: constantes (valor fixo, **imutável**)
+- **Hoisting**: içamento de variáveis com `var`
 
-const: constantes (valor fixo, imutável).
+---
 
-Hoisting (içamento de variáveis com var).
+## 🟨 Tipos de Dados
 
-Tipos de dados
+| Tipo        | Descrição                              |
+|-------------|----------------------------------------|
+| `string`    | Cadeia de caracteres                   |
+| `number`    | Números inteiros ou decimais           |
+| `boolean`   | Verdadeiro (`true`) ou falso (`false`) |
+| `array`     | Listas de valores                      |
+| `object`    | Estruturas chave/valor                 |
+| `null`      | Ausência proposital de valor           |
+| `undefined` | Sem valor atribuído                    |
+| `BigInt`    | Números inteiros muito grandes         |
+| `Symbol`    | Identificadores únicos (avançado)      |
 
-string (cadeia de caracteres)
+---
 
-number (inteiros, decimais)
+## ✏️ Manipulação de Strings
 
-boolean (true ou false)
+| Método                   | O que faz                                    |
+|-------------------------|-----------------------------------------------|
+| `.length`               | Conta caracteres                              |
+| `.split(" ")`           | Divide string em array por espaço             |
+| `.toLowerCase()`        | Converte para minúsculas                      |
+| `.toUpperCase()`        | Converte para maiúsculas                      |
+| `.includes("...")`      | Verifica se contém trecho específico          |
+| `.replaceAll('a', 'i')` | Substitui todos os caracteres                 |
+| `.trim()`               | Remove espaços do início e fim                |
+| `.slice(0, 2)`          | Recorte da string (posição inicial/final)     |
+| `.substring(0, 2)`      | Parecido com `.slice`, mas mais tolerante     |
 
-array (listas)
+---
 
-object (objetos com chave/valor)
+## 🔢 Operadores
 
-null (ausência proposital de valor)
+### ➕ Aritméticos
+`+`, `-`, `*`, `/`, `%`, `**`
 
-undefined (sem valor atribuído)
+### ⚖️ Comparação
+`==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=`
 
-BigInt e Symbol (mais avançados)
+### 🔁 Lógicos
+`&&` (E), `||` (OU), `!` (NÃO)
 
-✏️ Manipulação de Strings
-.length: conta caracteres
+### ❓ Ternário
+```javascript
+condição ? valor1 : valor2
+```
 
-.split(" "): divide a string em array
+### 🔼 Incremento / Decremento
+`++`, `--`
 
-.toLowerCase() / .toUpperCase(): minúsculo e maiúsculo
+---
 
-.includes("..."): verifica se contém
+## 📋 Console API
 
-.replaceAll('a', 'i'): substitui todos os caracteres
+```javascript
+console.log()    // Saída padrão
+console.error()  // Exibe erro
+console.warn()   // Exibe alerta
+console.table()  // Exibe dados formatados em tabela
+```
 
-.trim(): remove espaços do início/fim
+---
 
-.slice(0,2) e .substring(0,2): recorte de strings
+## 📌 Extras
 
-🔢 Operadores
+### 💬 Interpolação de Strings (Template Literals)
 
-Aritméticos: +, -, *, /, %, **
+```javascript
+const nome = "Natalia";
+console.log(`Olá ${nome}, seja bem-vinda!`);
+```
 
-Comparação: ==, ===, !=, !==, >, <, >=, <=
+### 🗂️ Arrays e Objetos
 
-Lógicos: &&, ||, !
-
-Ternário: condição ? valor1 : valor2
-
-Incremento e Decremento: ++, --
-
-📋 Console API
-console.log(): saída padrão
-
-console.error(): exibe erro
-
-console.warn(): exibe alerta
-
-console.table(): exibe dados formatados em tabela
-
-📌 Extras
-
-Interpolação de strings com template literals
-
-Ex: `Olá ${nome}, seja bem-vindo!`
-
-Arrays e objetos
-
-Acessando, modificando e exibindo com console.table()
+```javascript
+console.table(listaOuObjeto);
+```
