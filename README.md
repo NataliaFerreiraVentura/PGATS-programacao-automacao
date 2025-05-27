@@ -1,4 +1,5 @@
 ✅ Fundamentos
+
 Declaração de variáveis
 
 let e var: variáveis mutáveis.
@@ -41,6 +42,7 @@ BigInt e Symbol (mais avançados)
 .slice(0,2) e .substring(0,2): recorte de strings
 
 🔢 Operadores
+
 Aritméticos: +, -, *, /, %, **
 
 Comparação: ==, ===, !=, !==, >, <, >=, <=
@@ -61,6 +63,7 @@ console.warn(): exibe alerta
 console.table(): exibe dados formatados em tabela
 
 📌 Extras
+
 Interpolação de strings com template literals
 
 Ex: `Olá ${nome}, seja bem-vindo!`
