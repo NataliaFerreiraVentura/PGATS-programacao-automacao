@@ -22,36 +22,36 @@ Exemplos:
 
  */
 
-const nomeDog = " jane@  Mari@   23";
+const nomeDog = " jane@  Mari@   23"
 
-let nomeFormatado = nomeDog.trim();
-nomeFormatado = removerCaracteresEspeciais(nomeFormatado);
-nomeFormatado = removerTodosEspacos(nomeFormatado); // <- aqui está o segredo
-nomeFormatado = capitalizarCadaPalavra(nomeFormatado);
+let nomeFormatado = nomeDog.trim()
+nomeFormatado = removerCaracteresEspeciais(nomeFormatado)
+nomeFormatado = removerTodosEspacos(nomeFormatado) // <- aqui está o segredo
+nomeFormatado = capitalizarCadaPalavra(nomeFormatado)
 
-const valido = verificarSeONomeEValido(nomeFormatado);
+const valido = verificarSeONomeEValido(nomeFormatado)
 
-console.log("Nome original:", nomeDog);
-console.log("Nome formatado:", nomeFormatado);
-console.log(valido);
+console.log("Nome original:", nomeDog)
+console.log("Nome formatado:", nomeFormatado)
+console.log(valido)
 
 function removerCaracteresEspeciais(nome) {
-  return nome.replace(/[^a-zA-ZÀ-ÿ\s]/g, "");
+  return nome.replace(/[^a-zA-ZÀ-ÿ\s]/g, "")
 }
 
 function removerTodosEspacos(nome) {
-  return nome.replace(/\s+/g, " ").trim();
+  return nome.replace(/\s+/g, " ").trim()
 }
 
 function capitalizarCadaPalavra(nome) {
   return nome
     .split(" ")
     .map(palavra => palavra.charAt(0).toUpperCase() + palavra.slice(1).toLowerCase())
-    .join(" ");
+    .join(" ")
 }
 
 function verificarSeONomeEValido(nome) {
-  const palavras = nome.trim().split(" ");
-  return palavras.length >= 1 && palavras.length <= 2;
+  const palavras = nome.trim().split(" ")
+  return palavras.length >= 1 && palavras.length <= 2
 }
 

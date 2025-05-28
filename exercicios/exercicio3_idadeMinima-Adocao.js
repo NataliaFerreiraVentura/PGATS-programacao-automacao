@@ -16,20 +16,20 @@ idade 2 + porte G = sim
 idade 1 + port G = nao
 */
 
-const idadeDog = 2;
-const nomeDog = "Bylu";
-const porte = 'Pequeno'; 
+const idadeDog = 2
+const nomeDog = "Bylu"
+const porte = 'Pequeno'
 
- const statusAdocao = idadeDog >= 2 || porte === "Pequeno"
+const statusAdocao = idadeDog >= 2 || porte === "Pequeno"
   ? 'Apto para adoção'
-  : 'Não está apto para adoção';
+  : 'Não está apto para adoção'
 const dadosAdocao = [{
   Nome: nomeDog,
   Idade: idadeDog,
   Status: statusAdocao
 } ];
 
-console.log(dadosAdocao);
+console.log(dadosAdocao)
 
 
 /* 
