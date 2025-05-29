@@ -144,15 +144,6 @@ const saudacao = (nome) => `Olá, ${nome}!`;
 console.log(saudacao("Natalia"));
 ```
 
-### Função anônima
-```javascript
-const dobro = function(numero) {
-  return numero * 2;
-};
-
-console.log(dobro(5));
-```
-
 ### Função com valor padrão
 ```javascript
 function bemVindo(nome = "visitante") {
