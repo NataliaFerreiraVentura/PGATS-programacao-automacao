@@ -1,3 +1,4 @@
+
 # ✅ Fundamentos de JavaScript
 
 ## 🟦 Declaração de Variáveis
@@ -86,3 +87,80 @@ console.log(`Olá ${nome}, seja bem-vinda!`);
 ```javascript
 console.table(listaOuObjeto);
 ```
+
+---
+
+## 🔀 Condicionais
+
+### if / else if / else
+```javascript
+const idade = 20;
+
+if (idade < 18) {
+  console.log("Menor de idade");
+} else if (idade < 60) {
+  console.log("Adulto");
+} else {
+  console.log("Idoso");
+}
+```
+
+### switch (com `true` para expressões)
+```javascript
+const peso = 25;
+
+switch (true) {
+  case (peso <= 10):
+    console.log('P');
+    break;
+  case (peso >= 20 && peso < 30):
+    console.log('M');
+    break;
+  case (peso >= 30):
+    console.log('G');
+    break;
+  default:
+    console.log('ND');
+}
+```
+
+---
+
+## 🧠 Funções
+
+### Função tradicional
+```javascript
+function saudacao(nome) {
+  return `Olá, ${nome}!`;
+}
+
+console.log(saudacao("Natalia"));
+```
+
+### Arrow Function (função de seta)
+```javascript
+const saudacao = (nome) => `Olá, ${nome}!`;
+
+console.log(saudacao("Natalia"));
+```
+
+### Função anônima
+```javascript
+const dobro = function(numero) {
+  return numero * 2;
+};
+
+console.log(dobro(5));
+```
+
+### Função com valor padrão
+```javascript
+function bemVindo(nome = "visitante") {
+  return `Bem-vindo(a), ${nome}`;
+}
+
+console.log(bemVindo());
+console.log(bemVindo("Natalia"));
+```
+
+---
