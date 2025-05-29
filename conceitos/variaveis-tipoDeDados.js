@@ -131,3 +131,4 @@ console.log(dataCortar.slice(0,2))
 // 05 de abril
 // 0123456789
 console.log(dataCortar.substring(0,2))
+
