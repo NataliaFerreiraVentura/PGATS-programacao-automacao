@@ -155,3 +155,39 @@ console.log(bemVindo("Natalia"));
 ```
 
 ---
+
+## 🔁 Laços de Repetição
+
+### `for`
+Usado quando sabemos quantas vezes o loop deve acontecer.
+```javascript
+const gatos = ['Gamora', 'Thor','Charlote']
+for(let indice = 0;indice < gatos.length; indice ++){
+   console.log(`Dando um petisco para ${gatos[indice]}`)
+}
+```
+
+### `while`
+Usado quando não sabemos quantas vezes será repetido, e a repetição depende de uma condição booleana.
+```javascript
+let voltasAteFicarCansado = 5
+let quantidadeVoltasAtual = 0
+while(quantidadeVoltasAtual < voltasAteFicarCansado){
+  console.log(`Dar uma volta na quadra`)
+  quantidadeVoltasAtual++
+}
+```
+
+### `forEach`
+Usado para percorrer cada item de um array. Não pode ser interrompido com `break` ou `return` como um `for` tradicional.
+```javascript
+const listaDeAlunos = [
+  'Marcio',
+  'Natalia',
+  'Nathanael',
+  'Ana'
+]
+listaDeAlunos.forEach(aluno =>{
+  console.log(aluno)
+});
+```

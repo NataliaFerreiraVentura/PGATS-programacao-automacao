@@ -7,11 +7,11 @@ const resultado = filtrarNumeros(entrada)
 
 console.log(resultado)
 
+
 function contarVogais(texto) {
   let contadorVogais = 0
   const vogais = ['a', 'e', 'i', 'o', 'u']
-  const textoMinusculo = texto.toLowerCase()
-  for (let i = 0; i < textoMinusculo.length; i++) {
+  for (let i = 0; i < texto.length; i++) {
     const caractere = texto[i]
     if (vogais.includes(caractere)) {
       contadorVogais++
@@ -19,5 +19,6 @@ function contarVogais(texto) {
   }
   return contadorVogais
 }
+
 console.log(contarVogais('Nathanael'))
-console.log(contarVogais('Naty'))
+console.log(contarVogais('Naty ferreira'))

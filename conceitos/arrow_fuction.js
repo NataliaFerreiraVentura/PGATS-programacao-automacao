@@ -61,3 +61,10 @@ console.log(`-----------------------------------`)
 console.log(listarNomesDeDogs())
 console.log(`-----------------------------------`)
 console.log(dobrar(2))
+
+
+//mocha
+
+teste('nome do teste', {tags: 'critico'},function(){
+
+})
