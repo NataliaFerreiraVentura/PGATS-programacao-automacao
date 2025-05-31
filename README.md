@@ -277,3 +277,22 @@ try {
 * Evita que o app trave com erros inesperados.  
 * Permite mensagens de erro mais claras.  
 * Garante um comportamento mais controlado e seguro.
+
+
+## 🚀 Async / Await
+
+async: torna uma função assíncrona (sempre retorna uma Promise)
+
+await: pausa a execução até a Promise ser resolvida
+
+**Exemplo:**
+
+```javascript
+// async - função assíncrona
+async function exibirNomeDogFormatado(nome){
+  return nome.toUpperCase();
+}
+
+// await - espera a resposta
+console.log(await exibirNomeDogFormatado('Pantera'));
+```
