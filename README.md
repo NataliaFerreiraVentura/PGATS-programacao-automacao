@@ -233,7 +233,7 @@ console.log(tchau("Natalia"));
 - Separação de responsabilidades
 
 
-### 🧪 try...catch e throw (explicação)
+## 🧪 try...catch e throw (explicação)
 
 #### O que é `try...catch`?
 
