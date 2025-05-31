@@ -6,8 +6,7 @@ const entrada = [1, 'a', 3, 'b', 5, 'teste', 7]
 const resultado = filtrarNumeros(entrada)
 
 console.log(resultado)
-
-
+console.log('----------------')
 function contarVogais(texto) {
   let contadorVogais = 0
   const vogais = ['a', 'e', 'i', 'o', 'u']

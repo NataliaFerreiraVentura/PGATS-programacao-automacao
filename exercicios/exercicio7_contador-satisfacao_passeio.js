@@ -25,10 +25,10 @@ console.log(`O dog está satisfeito depois de ${voltasPasseioSatisfeito} voltas!
 
 console.log('----------------')
 
-function contarSatisfacaoPasseio(maxvoltas = 5){
+function contarSatisfacaoPasseio(){
   let voltasPasseioSatisfeito = 1
-
-  while(voltasPasseioSatisfeito < maxvoltas ){
+  let maxVoltas = 5
+  while(voltasPasseioSatisfeito <= maxVoltas ){
     console.log(`Volta ${voltasPasseioSatisfeito} com o doguinho`)  
     voltasPasseioSatisfeito ++ 
   }
@@ -37,5 +37,3 @@ function contarSatisfacaoPasseio(maxvoltas = 5){
 } 
 
 contarSatisfacaoPasseio()
-
-console.log('----------------')

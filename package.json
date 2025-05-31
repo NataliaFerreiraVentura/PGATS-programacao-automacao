@@ -1,0 +1,21 @@
+{
+  "name": "programacao",
+  "version": "1.0.0",
+  "description": "- `let` e `var`: variáveis **mutáveis**\r - `const`: constantes (valor fixo, **imutável**)\r - **Hoisting**: içamento de variáveis com `var`",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NataliaFerreiraVentura/Pos_Graduacao_JulioDeLima.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NataliaFerreiraVentura/Pos_Graduacao_JulioDeLima/issues"
+  },
+  "homepage": "https://github.com/NataliaFerreiraVentura/Pos_Graduacao_JulioDeLima#readme"
+}

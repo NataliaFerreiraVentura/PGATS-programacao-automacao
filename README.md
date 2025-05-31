@@ -78,14 +78,14 @@ console.table()  // Exibe dados formatados em tabela
 ### 💬 Interpolação de Strings (Template Literals)
 
 ```javascript
-const nome = "Natalia";
-console.log(`Olá ${nome}, seja bem-vinda!`);
+const nome = "Natalia"
+console.log(`Olá ${nome}, seja bem-vinda!`)
 ```
 
 ### 🗂️ Arrays e Objetos
 
 ```javascript
-console.table(listaOuObjeto);
+console.table(listaOuObjeto)
 ```
 
 ---
@@ -94,33 +94,33 @@ console.table(listaOuObjeto);
 
 ### if / else if / else
 ```javascript
-const idade = 20;
+const idade = 20
 
 if (idade < 18) {
-  console.log("Menor de idade");
+  console.log("Menor de idade")
 } else if (idade < 60) {
-  console.log("Adulto");
+  console.log("Adulto")
 } else {
-  console.log("Idoso");
+  console.log("Idoso")
 }
 ```
 
 ### switch (com `true` para expressões)
 ```javascript
-const peso = 25;
+const peso = 25
 
 switch (true) {
   case (peso <= 10):
-    console.log('P');
+    console.log('P')
     break;
   case (peso >= 20 && peso < 30):
-    console.log('M');
+    console.log('M')
     break;
   case (peso >= 30):
-    console.log('G');
-    break;
+    console.log('G')
+    break
   default:
-    console.log('ND');
+    console.log('ND')
 }
 ```
 
@@ -189,5 +189,45 @@ const listaDeAlunos = [
 ]
 listaDeAlunos.forEach(aluno =>{
   console.log(aluno)
-});
+})
+
+## 🧩 Modularização de Código
+
+A modularização permite dividir o código em **módulos reutilizáveis**, organizando melhor os arquivos e responsabilidades.
+
+### 📁 Exemplo de estrutura
+
 ```
+meu-projeto/
+├── index.js
+├── saudacoes.js
+```
+
+### saudacoes.js
+
+```javascript
+function ola(nome) {
+  return `Olá, ${nome}!`;
+}
+
+function tchau(nome) {
+  return `Tchau, ${nome}!`;
+}
+
+module.exports = { ola, tchau };
+```
+
+### index.js
+
+```javascript
+const { ola, tchau } = require('./saudacoes');
+
+console.log(ola("Natalia"));
+console.log(tchau("Natalia"));
+```
+
+### ✅ Benefícios
+
+- Reutilização de código
+- Facilidade de manutenção
+- Separação de responsabilidades
