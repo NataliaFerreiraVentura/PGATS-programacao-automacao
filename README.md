@@ -250,7 +250,7 @@ try {
 }
 ```
 
-#### O que é `throw`?
+## O que é `throw`?
 
 Usado para **lançar um erro manualmente**.
 
