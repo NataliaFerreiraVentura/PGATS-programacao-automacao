@@ -277,5 +277,3 @@ try {
 * Evita que o app trave com erros inesperados.  
 * Permite mensagens de erro mais claras.  
 * Garante um comportamento mais controlado e seguro.
-
-Se desejar, posso gerar um exemplo com cachorros e petiscos usando esse recurso também. 🐶🍪
