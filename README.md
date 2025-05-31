@@ -190,7 +190,7 @@ const listaDeAlunos = [
 listaDeAlunos.forEach(aluno =>{
   console.log(aluno)
 })
-
+```
 ## 🧩 Modularização de Código
 
 A modularização permite dividir o código em **módulos reutilizáveis**, organizando melhor os arquivos e responsabilidades.
