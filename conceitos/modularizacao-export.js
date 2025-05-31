@@ -8,11 +8,11 @@
 */
 
 function exibirNomePet(paramNomePet){
-  console.log(`"O nome do pet é ${paramNomePet}`)
+  console.log(`O nome do pet é ${paramNomePet}`)
 }
 
 function exibirIdade(exibirIdadePet){
-  console.log(`"A idade do pet é ${exibirIdadePet}`)
+  console.log(`A idade do pet é ${exibirIdadePet}`)
 }
 
 export{

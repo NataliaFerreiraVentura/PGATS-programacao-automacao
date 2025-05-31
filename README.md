@@ -231,3 +231,51 @@ console.log(tchau("Natalia"));
 - Reutilização de código
 - Facilidade de manutenção
 - Separação de responsabilidades
+
+
+### 🧪 try...catch e throw (explicação)
+
+#### O que é `try...catch`?
+
+Serve para **tratar erros** no seu código sem que o programa "quebre" (pare de funcionar).
+
+**Exemplo:**
+
+```javascript
+try {
+  let resultado = 10 / 0;
+  console.log("Resultado:", resultado);
+} catch (erro) {
+  console.log("Ocorreu um erro:", erro.message);
+}
+```
+
+#### O que é `throw`?
+
+Usado para **lançar um erro manualmente**.
+
+**Exemplo:**
+
+```javascript
+function dividir(a, b) {
+  if (b === 0) {
+    throw new Error("Não é possível dividir por zero!");
+  }
+  return a / b;
+}
+
+try {
+  let resultado = dividir(10, 0);
+  console.log("Resultado:", resultado);
+} catch (erro) {
+  console.log("Erro capturado:", erro.message);
+}
+```
+
+#### Por que usar isso?
+
+* Evita que o app trave com erros inesperados.  
+* Permite mensagens de erro mais claras.  
+* Garante um comportamento mais controlado e seguro.
+
+Se desejar, posso gerar um exemplo com cachorros e petiscos usando esse recurso também. 🐶🍪
