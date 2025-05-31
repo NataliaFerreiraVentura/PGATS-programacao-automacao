@@ -18,3 +18,17 @@ try {
     console.log(`Sempre serei executado`)
     // fechar a conecta com o banco (garantir que foi fechado)
 }
+
+function dividir(a, b) {
+  if (b === 0) {
+    throw new Error("Não é possível dividir por zero!");
+  }
+  return a / b;
+}
+
+try {
+  let resultado = dividir(10, 0);
+  console.log("Resultado:", resultado);
+} catch (erro) {
+  console.log("Erro capturado:", erro.message);
+}
