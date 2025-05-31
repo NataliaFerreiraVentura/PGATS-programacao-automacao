@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/NataliaFerreiraVentura/Pos_Graduacao_JulioDeLima/issues"
   },
-  "homepage": "https://github.com/NataliaFerreiraVentura/Pos_Graduacao_JulioDeLima#readme"
+  "homepage": "https://github.com/NataliaFerreiraVentura/Pos_Graduacao_JulioDeLima#readme",
+  "devDependencies": {
+    "mocha": "^11.5.0"
+  }
 }
