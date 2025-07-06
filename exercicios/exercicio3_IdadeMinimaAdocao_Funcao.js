@@ -1,7 +1,7 @@
 function verificarSePodeSerAdotado(idade, porte) {
-  return idade >= 2 || porte === "Pequeno"
-    ? "Apto para adoção"
-    : "Não está apto para adoção"
+  return idade >= 2 || (idade === 1 && porte === 'M')
+    ? "True"
+    : "False"
 }
 
 function criarDog(nome, idade, porte) {
