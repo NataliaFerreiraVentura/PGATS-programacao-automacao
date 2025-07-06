@@ -9,7 +9,8 @@
   roda o teste de novo
   refatoro o codigo para melhorar
  */
-import { exibirNomeDogFormatado } from "../conceitos/teste-Unidade.js"
+// testes/01-testes.js
+import { exibirNomeDogFormatado } from '../conceitos/teste-unidade.js'; // nome exatamente como no arquivo
 import assert from 'node:assert'
 
 describe('Testes do projeto', () => {

@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2025-07-06T00:50:18.400Z",
-    "end": "2025-07-06T00:50:18.410Z",
-    "duration": 10,
+    "start": "2025-07-06T01:09:26.227Z",
+    "end": "2025-07-06T01:09:26.234Z",
+    "duration": 7,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7046f3ed-0e51-4445-b4a4-1fc48b331b73",
+      "uuid": "268ee896-67b2-4ca1-925d-1276b39f9ea1",
       "title": "",
       "fullFile": "C:\\Users\\natyv\\Documents\\ESTUDOS_AUTOMACAO_QA\\POS-GRADUAÇÃO\\programacao.js\\testes\\01-testes.js",
       "file": "\\testes\\01-testes.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d39d75dd-c84d-46b1-9e6c-8a49627df49b",
+          "uuid": "d0e6c20a-1c23-4e74-b06a-5b7dfbce840c",
           "title": "Testes do projeto",
           "fullFile": "C:\\Users\\natyv\\Documents\\ESTUDOS_AUTOMACAO_QA\\POS-GRADUAÇÃO\\programacao.js\\testes\\01-testes.js",
           "file": "\\testes\\01-testes.js",
@@ -38,7 +38,7 @@
               "title": "Exibir o nome do dog com letrar maiusculas",
               "fullTitle": "Testes do projeto Exibir o nome do dog com letrar maiusculas",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "assert.strictEqual(exibirNomeDogFormatado('Pantera'), 'PANTERA')\n// verifique se valor atual >  igual ao valor esperado",
               "err": {},
-              "uuid": "54cdcb0a-937f-4d4d-ae29-7039d5b973d6",
-              "parentUUID": "d39d75dd-c84d-46b1-9e6c-8a49627df49b",
+              "uuid": "e754ef07-6699-4c3d-a4c4-a707870d32bd",
+              "parentUUID": "d0e6c20a-1c23-4e74-b06a-5b7dfbce840c",
               "isHook": false,
               "skipped": false
             },
@@ -65,21 +65,21 @@
               "context": null,
               "code": "// throw new Error()    \nassert.equal(exibirNomeDogFormatado('piTÁgoraS'), 'PITÁGORAS');",
               "err": {},
-              "uuid": "a9456cc8-2663-4ec2-9b16-f2baf2c145bb",
-              "parentUUID": "d39d75dd-c84d-46b1-9e6c-8a49627df49b",
+              "uuid": "a7ca3782-71f4-4da8-be88-92465e8367ba",
+              "parentUUID": "d0e6c20a-1c23-4e74-b06a-5b7dfbce840c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "54cdcb0a-937f-4d4d-ae29-7039d5b973d6",
-            "a9456cc8-2663-4ec2-9b16-f2baf2c145bb"
+            "e754ef07-6699-4c3d-a4c4-a707870d32bd",
+            "a7ca3782-71f4-4da8-be88-92465e8367ba"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
