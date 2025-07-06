@@ -18,8 +18,8 @@ describe('Testes do projeto', () => {
     // verifique se valor atual >  igual ao valor esperado
   })
 
-  it('segundo teste', () => {
-    throw new console.error()
-    
+  it('segundo teste', async function() {
+    // throw new Error()    
+    assert.equal(exibirNomeDogFormatado('piTÁgoraS'), 'PITÁGORAS');
   })
 })
