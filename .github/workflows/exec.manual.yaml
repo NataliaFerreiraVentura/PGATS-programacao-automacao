@@ -2,7 +2,7 @@ name: 'Execução Manual'
 
 on: 
   workflow_dispatch: 
-
+    
 jobs:
   testes:
     runs-on: ubuntu-latest
