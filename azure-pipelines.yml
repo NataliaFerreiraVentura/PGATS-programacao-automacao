@@ -1,0 +1,32 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- checkout: self
+
+- task: NodeTool@0
+  inputs:
+    versionSpec: '18.x'   # versão do Node.js, ajuste conforme seu projeto
+  displayName: 'Instalar Node.js'
+
+- script: |
+    npm install -g yarn
+  displayName: 'Instalar Yarn globalmente'
+
+- script: |
+    yarn install
+  displayName: 'Instalar dependências'
+
+- script: |
+    yarn test
+  displayName: 'Executar testes Mocha'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'relatorios'
+    ArtifactName: 'relatorio-mocha'
+    publishLocation: 'Container'
+  condition: succeededOrFailed()
